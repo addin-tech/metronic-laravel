@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', \App\Http\Controllers\DashboardController::class);
+Route::get("/", [\App\Http\Controllers\AuthController::class,"signIn"]);
+Route::get('/dashboard', \App\Http\Controllers\DashboardController::class);
